@@ -17,6 +17,7 @@
         android:layout_height="wrap_content"/>
 
     <hackathon.thesesh.com.hackathon2017.DodgyEditText
+        android:id="@+id/nameText"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginLeft="16dp"
@@ -32,12 +33,12 @@
         android:layout_height="wrap_content"/>
 
     <hackathon.thesesh.com.hackathon2017.DodgyEditText
+        android:id="@+id/emailText"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginLeft="16dp"
         android:layout_marginRight="16dp"
         android:maxLines="1"/>
-
 
     <TextView
         android:layout_width="match_parent"
@@ -47,10 +48,23 @@
         android:layout_height="wrap_content"/>
 
     <hackathon.thesesh.com.hackathon2017.DodgyEditText
+        android:id="@+id/complaintText"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginLeft="16dp"
         android:layout_marginRight="16dp"
         android:maxLines="4"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+
+    <Button
+        android:id="@+id/go_button"
+        android:layout_width="match_parent"
+        android:text="Go"
+        android:textAllCaps="false"
+        android:layout_height="50dp"/>
 
 </LinearLayout>
