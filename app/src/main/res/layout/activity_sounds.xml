@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="hackathon.thesesh.com.hackathon2017.Sounds">
+
+
+    <Button
+        android:id="@+id/create_complaint_button"
+        android:layout_width="match_parent"
+        android:text="@string/create_complaint"
+        android:textAllCaps="false"
+        android:layout_height="50dp"/>
+
+</android.support.constraint.ConstraintLayout>
