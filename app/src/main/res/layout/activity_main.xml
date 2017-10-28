@@ -6,13 +6,15 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context="hackathon.thesesh.com.hackathon2017.MainActivity">
+    tools:context="hackathon.thesesh.com.hackathon2017.MainActivity"
+    android:background="@color/white">
+
 
 
     <ImageView
-        android:layout_width="100dp"
-        android:layout_height="50dp"
-        android:src="@drawable/ombudsman"/>
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:src="@drawable/ombudsman" />
 
     <View
         android:layout_width="match_parent"
