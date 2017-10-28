@@ -20,6 +20,37 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginLeft="16dp"
-        android:layout_marginRight="16dp"/>
+        android:layout_marginRight="16dp"
+        android:maxLines="1"/>
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:text="Email"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_height="wrap_content"/>
+
+    <hackathon.thesesh.com.hackathon2017.DodgyEditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:maxLines="1"/>
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:text="Complaint"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_height="wrap_content"/>
+
+    <hackathon.thesesh.com.hackathon2017.DodgyEditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:maxLines="4"/>
 
 </LinearLayout>
