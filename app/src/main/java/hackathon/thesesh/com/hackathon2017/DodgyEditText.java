@@ -11,6 +11,8 @@ import android.widget.TextView;
 
 public class DodgyEditText extends android.support.v7.widget.AppCompatEditText {
 
+    private boolean textChanged = false;
+
     public DodgyEditText(Context context) {
         super(context);
     }
@@ -26,7 +28,23 @@ public class DodgyEditText extends android.support.v7.widget.AppCompatEditText {
     @Override
     protected void onTextChanged(CharSequence text, int start, int lengthBefore, int lengthAfter) {
         super.onTextChanged(text, start, lengthBefore, lengthAfter);
+        if (textChanged) {
+            textChanged = false;
+            setText(mutateText(text.toString()));
+            setSelection(getText().length());
+        }
+        else {
+            textChanged = true;
+        }
 
+    }
+
+    private String mutateText(String text) {
+        double randomNumber = Math.random();
+        if (randomNumber < 0.2 && text.length() != 0) {
+            return text.substring(0, text.length() - 1) + "a";
+        }
+        return text;
     }
 
 
