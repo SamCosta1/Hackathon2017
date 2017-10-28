@@ -1,4 +1,5 @@
 <resources>
     <string name="app_name">Hackathon2017</string>
     <string name="create_complaint">Create Complaint</string>
+    <string name="name">Name</string>
 </resources>
