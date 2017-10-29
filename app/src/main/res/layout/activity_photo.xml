@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="hackathon.thesesh.com.hackathon2017.PhotoActivity"
+    android:orientation="vertical">
+
+  <FrameLayout
+      android:layout_width="match_parent"
+      android:layout_height="0dp"
+      android:layout_weight="1">
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        />
+
+    <hackathon.thesesh.com.hackathon2017.DrawingView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/drawing"
+        android:screenOrientation="portrait"/>+
+  </FrameLayout>
+
+
+  <Button
+      android:id="@+id/photo_button"
+      android:layout_width="match_parent"
+      android:text="@string/photo"
+      android:textAllCaps="false"
+      android:layout_height="50dp"/>
+</LinearLayout>
