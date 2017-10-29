@@ -22,7 +22,9 @@ public class NavigationActivity extends AppCompatActivity {
         setupViews();
         setupValidityChecker();
 
-        surfaceView.setRenderer(new NavigationRenderer(this));
+        NavigationRenderer renderer = new NavigationRenderer(this);
+        surfaceView.setOnTouchListener(renderer);
+        surfaceView.setRenderer(renderer);
     }
 
     @Override
