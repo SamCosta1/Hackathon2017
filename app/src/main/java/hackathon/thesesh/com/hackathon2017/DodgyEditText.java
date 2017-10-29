@@ -11,6 +11,7 @@ import android.widget.TextView;
 
 public class DodgyEditText extends android.support.v7.widget.AppCompatEditText {
 
+    private static final char[] LETTERS = "QWERTYUIOPASDFGHJKLZXCVBNM1234567890".toLowerCase().toCharArray();
     private boolean textChanged = false;
 
     public DodgyEditText(Context context) {
@@ -39,10 +40,11 @@ public class DodgyEditText extends android.support.v7.widget.AppCompatEditText {
 
     }
 
+
     private String mutateText(String text) {
         double randomNumber = Math.random();
         if (randomNumber < 0.2 && text.length() != 0) {
-            return text.substring(0, text.length() - 1) + "a";
+            return text.substring(0, text.length() - 1) + LETTERS[(int)(Math.random() * LETTERS.length)];
         }
         return text;
     }
