@@ -44,6 +44,9 @@ public class IntroActivity extends AppCompatActivity implements View.OnClickList
             formData.setName(nameTextData.getText().toString());
             formData.setEmail(emailTextData.getText().toString());
             formData.setComplaint(complaintTextData.getText().toString());
+
+            Intent intent = PhotoActivity.createIntent(this);
+            startActivity(intent);
         }
     }
 

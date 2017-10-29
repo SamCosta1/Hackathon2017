@@ -1,5 +1,6 @@
 package hackathon.thesesh.com.hackathon2017;
 
+import android.content.Context;
 import android.content.Intent;
 import android.graphics.Bitmap;
 import android.provider.MediaStore;
@@ -30,6 +31,11 @@ public class PhotoActivity extends AppCompatActivity {
         drawView.setEnabled(false);
 
     }
+
+    public static Intent createIntent(Context context) {
+        return new Intent(context, PhotoActivity.class);
+    }
+
 
     private DrawingView drawView;
     static final int REQUEST_PIC = 1;
