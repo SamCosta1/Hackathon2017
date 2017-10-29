@@ -21,13 +21,17 @@ public class PhotoActivity extends AppCompatActivity {
             public void onClick(View view) {
 
                 capture(view);
-                //Intent takepicintent = new Intent(MediaStore.ACTION_IMAGE_CAPTURE);
 
-                //startActivity(takepicintent);
+
+
             }
         });
+        drawView = (DrawingView)findViewById(R.id.drawing);
+        drawView.setEnabled(false);
+
     }
 
+    private DrawingView drawView;
     static final int REQUEST_PIC = 1;
 
     public void capture(View view) {
@@ -49,8 +53,11 @@ public class PhotoActivity extends AppCompatActivity {
 
             ImageView imageView = findViewById(R.id.imageView);
             imageView.setImageBitmap(imageBitmap);
+            drawView.setEnabled(true);
         }
     }
+
+
 
 
 }
