@@ -4,8 +4,8 @@
     <uses-feature   android:name="android.hardware.camera" android:required="true" />
 
     <application
-        android:allowBackup="true"
         android:name=".engine.OmbudsmanApplication"
+        android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
@@ -20,5 +20,6 @@
         </activity>
         <activity android:name=".IntroActivity"></activity>
         <activity android:name=".PhotoActivity"></activity>
+        <activity android:name=".NavigationActivity"></activity>
     </application>
 </manifest>
